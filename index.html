@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ferdy Setia">
+    <meta name="description" content="Caesar Cipher Decoder displays possible decoded texts for shifts -25 to 25 in a table format.">
+    <meta name="keywords" content="Caesar Cipher, text decryption, cipher decoder, decryption tool, shift cipher, decode, text decoder">
+    <title>Caesar Cipher Decoder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.css">
+</head>
+<body>
+    <h1>Caesar Cipher Decoder</h1>
+
+    <form onsubmit="event.preventDefault(); caesarDecode();">
+        <label for="inputText">Enter Encoded Text:</label><br>
+        <textarea id="inputText" name="inputText" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Decode</button>
+    </form>
+
+    <h2>Decoded Results:</h2>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Shift</th>
+                <th>Decoded Text</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be appended here -->
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
